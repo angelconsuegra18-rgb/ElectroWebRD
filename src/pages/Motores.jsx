@@ -3,7 +3,7 @@ import { useState } from "react";
 import MotorAssistant from "../components/MotorAssistant";
 import ProtectionAssistant from "../components/protections/ProtectionAssistant";
 import ArranqueMotores from "../components/arranqueMotores/ArranqueMotores";
-import VariadoresFrecuencia from "../components/variadoresFrecuencia/VariadoresFrecuencia";
+import VariadoresFrecuencia from "../components/VDF/VariadoresFrecuencia";
 
 function Motores() {
 
