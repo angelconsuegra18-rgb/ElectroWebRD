@@ -1,0 +1,304 @@
+/* ===========================
+   ESTILOS GENERALES
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 40px;
+    background:#111827;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    flex-shrink:0;
+}
+
+.logo-img{
+    width:220px;
+    height:auto;
+    display:block;
+    transition:0.3s ease;
+}
+
+.logo-img:hover{
+    transform:scale(1.03);
+}
+
+.header nav{
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+.header nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    font-size:15px;
+    transition:.3s;
+    padding:8px 12px;
+    border-radius:8px;
+}
+
+.header nav a:hover{
+    background:#1e293b;
+    color:#facc15;
+}
+
+/* ===========================
+   HOME
+=========================== */
+
+.home{
+    min-height:calc(100vh - 80px);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.home-title{
+    font-size:3.5rem;
+    margin-bottom:15px;
+    color:white;
+}
+
+.home-subtitle{
+    font-size:1.25rem;
+    color:#cbd5e1;
+    max-width:750px;
+    margin-bottom:60px;
+}
+
+/* ===========================
+   TARJETAS
+=========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(2,380px);
+    gap:30px;
+}
+
+.card{
+    background:#1e293b;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:35px;
+    text-decoration:none;
+    color:white;
+    transition:all .3s ease;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#facc15;
+    box-shadow:0 18px 40px rgba(0,0,0,.45);
+}
+
+.icon{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.card h2{
+    color:#facc15;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#cbd5e1;
+    line-height:1.6;
+}
+
+.card small{
+    display:block;
+    margin-top:18px;
+    color:#94a3b8;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width:900px){
+
+    .header{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    .logo-img{
+        width:170px;
+    }
+
+    .header nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+        max-width:400px;
+        width:100%;
+    }
+
+}
+
+/* ===========================
+   PÁGINA CALCULADORAS
+=========================== */
+
+.calculadoras-page{
+    display:flex;
+    min-height:calc(100vh - 80px);
+}
+
+.sidebar{
+    width:280px;
+    background:#162033;
+    padding:25px;
+    border-right:1px solid rgba(255,255,255,.08);
+}
+
+.sidebar h3{
+    color:#facc15;
+    margin-bottom:25px;
+}
+
+.sidebar button{
+    width:100%;
+    padding:15px;
+    margin-bottom:12px;
+    background:#243047;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    text-align:left;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.sidebar button:hover{
+    background:#facc15;
+    color:#111827;
+}
+
+.contenido{
+    flex:1;
+    padding:40px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+}
+
+/*======================================
+        CENTRO DE MOTORES
+======================================*/
+
+.motor-card{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+    background:#18233a;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:28px;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.30s;
+
+    text-align:left;
+
+}
+
+.motor-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#3b82f6;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.motor-card h3{
+
+    margin:0;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:white;
+
+}
+
+.motor-card p{
+
+    margin-top:8px;
+
+    color:#b9c3d8;
+
+    font-size:18px;
+
+}
+
+.motor-card div:first-child{
+
+    width:74px;    height:74px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+    background:rgba(59,130,246,.12);
+
+    border:1px solid rgba(59,130,246,.25);
+
+}

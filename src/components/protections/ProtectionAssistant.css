@@ -1,0 +1,231 @@
+/* ==========================================
+   PROTECTION ASSISTANT
+========================================== */
+
+.protection-page{
+    width:100%;
+}
+
+.protection-card{
+
+    background:#172033;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+}
+
+.protection-title{
+
+    color:#fff;
+
+    font-size:38px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.protection-subtitle{
+
+    color:#aeb8ca;
+
+    margin-bottom:35px;
+
+    font-size:17px;
+
+}
+
+.section-title{
+
+    color:#facc15;
+
+    font-size:22px;
+
+    margin:35px 0 20px;
+
+    font-weight:700;
+
+}
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.form-group label{
+
+    color:#d1d5db;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.form-group input,
+
+.form-group select{
+
+    height:52px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#0f172a;
+
+    color:white;
+
+    padding:0 16px;
+
+    font-size:15px;
+
+    transition:.25s;
+
+}
+
+.form-group input:focus,
+
+.form-group select:focus{
+
+    outline:none;
+
+    border:2px solid #facc15;
+
+}
+
+.full-width{
+
+    grid-column:1 / -1;
+
+}
+
+.calculate-btn{
+
+    width:100%;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#facc15;
+
+    color:#111827;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.calculate-btn:hover{
+
+    background:#eab308;
+
+}
+
+.results{
+
+    margin-top:40px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding-top:35px;
+
+}
+
+.results-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:20px;
+
+}
+
+.result-card{
+
+    background:#1f2a44;
+
+    border-radius:15px;
+
+    padding:22px;
+
+    border:1px solid rgba(255,255,255,.06);
+
+}
+
+.result-card h3{
+
+    color:#facc15;
+
+    font-size:18px;
+
+    margin-bottom:12px;
+
+}
+
+.result-card p{
+
+    color:#fff;
+
+    font-size:16px;
+
+    line-height:1.7;
+
+}
+
+@media(max-width:900px){
+
+.form-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.full-width{
+
+grid-column:1;
+
+}
+
+.protection-card{
+
+padding:25px;
+
+}
+
+.protection-title{
+
+font-size:30px;
+
+}
+
+}

@@ -1,0 +1,80 @@
+/*======================================
+        CENTRO DE MOTORES
+======================================*/
+
+.motor-card{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+    background:#18233a;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:28px;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.30s;
+
+    text-align:left;
+
+}
+
+.motor-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#3b82f6;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.motor-card h3{
+
+    margin:0;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:white;
+
+}
+
+.motor-card p{
+
+    margin-top:8px;
+
+    color:#b9c3d8;
+
+    font-size:18px;
+
+}
+
+.motor-card div:first-child{
+
+    width:74px;
+    height:74px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:40px;
+
+    background:rgba(59,130,246,.12);
+
+    border:1px solid rgba(59,130,246,.25);
+
+}

@@ -1,0 +1,124 @@
+.arranque-card {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  background: linear-gradient(180deg, #111b31, #0d1528);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 24px;
+
+  padding: 45px;
+
+  box-shadow:
+    0 15px 45px rgba(0,0,0,0.35),
+    inset 0 0 0 1px rgba(255,255,255,0.02);
+
+  color: white;
+
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.arranque-card h2 {
+  font-size: 34px;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+}
+
+.arranque-inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.arranque-inputs input {
+  padding: 14px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+
+  background: #0a1222;
+  color: white;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.2s ease;
+}
+
+.arranque-inputs input:focus {
+  border: 1px solid #FFC107;
+  box-shadow: 0 0 12px rgba(255,193,7,0.25);
+  transform: scale(1.02);
+}
+
+.arranque-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.arranque-btn {
+  flex: 1;
+
+  padding: 12px;
+
+  border-radius: 12px;
+  border: none;
+
+  cursor: pointer;
+
+  background: #1a2336;
+  color: #cbd5e1;
+
+  font-weight: 500;
+
+  transition: 0.25s ease;
+}
+
+.arranque-btn:hover {
+  transform: translateY(-3px);
+  background: #222e45;
+}
+
+.arranque-btn.active {
+  background: linear-gradient(90deg, #FFC107, #ffb300);
+  color: #000;
+  font-weight: 700;
+
+  box-shadow: 0 8px 20px rgba(255,193,7,0.25);
+}
+
+.arranque-resultados {
+  margin-top: 30px;
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255,255,255,0.08);
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.arranque-resultados h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.arranque-highlight {
+  color: #FFC107;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* pequeños detalles pro */
+.arranque-card p {
+  margin: 6px 0;
+  color: #cbd5e1;
+}

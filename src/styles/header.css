@@ -1,0 +1,54 @@
+/* ===========================
+   HEADER
+=========================== */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 40px;
+    background:#111827;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    flex-shrink:0;
+}
+
+.logo-img{
+    width:220px;
+    height:auto;
+    display:block;
+    transition:.3s;
+}
+
+.logo-img:hover{
+    transform:scale(1.03);
+}
+
+.header nav{
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+.header nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    font-size:15px;
+    transition:.3s;
+    padding:8px 12px;
+    border-radius:8px;
+}
+
+.header nav a:hover{
+    background:#1e293b;
+    color:#facc15;
+}
