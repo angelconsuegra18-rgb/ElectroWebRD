@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ElectroWebRD</string>
+    <string name="title_activity_main">ElectroWebRD</string>
+    <string name="package_name">com.electrowebrd.app</string>
+    <string name="custom_url_scheme">com.electrowebrd.app</string>
+</resources>

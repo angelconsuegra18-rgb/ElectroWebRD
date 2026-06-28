@@ -12,6 +12,14 @@ function Home() {
         Plataforma profesional para ingenieros, electricistas y técnicos eléctricos.
       </p>
 
+      <a
+        href="/app-release.apk"
+        className="download-app-btn"
+        download
+      >
+        📲 Descargar App para Android
+      </a>
+
       <div className="cards">
 
         <Link to="/calculadoras" className="card">
